@@ -8,5 +8,8 @@ a 1-D convolutional layer, followed by a 1-D max pooling layer. A grid search wa
 hyperparameters.
 
 The data used to train this model comes from Tatoeba: J. Tiedemann, 2012, Parallel Data, Tools and Interfaces in OPUS. In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)
+
 In order to replicate the results, the data must first be retrieved from: https://opus.nlpl.eu/datasets/Tatoeba?pair=en&fr
-Note that as of project completion, the most recent version is v2026-07-08.
+and placed in a folder called "translation_corpus" which lies in the same directory as the Jupyter notebook.
+
+Note that as of project completion, the most recent dataset version is v2026-07-08.
