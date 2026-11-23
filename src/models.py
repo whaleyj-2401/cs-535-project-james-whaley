@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 from collections import OrderedDict
 
+# This class is based on the one found in the PyTorch documentation
+# S. Robertson. "NLP From Scratch: Translation with a Sequence to Sequence Network and Attention." 
+# PyTorch Documentation. https://docs.pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html.
 class LSTM2LSTM(nn.Module):
 
     def __init__(self,
@@ -111,6 +114,10 @@ class LSTM2LSTM(nn.Module):
         outputs = torch.cat(output_vector, dim=1)
         return outputs
 
+# This class is based on the one found in the PyTorch documentation
+# S. Robertson. "NLP From Scratch: Translation with a Sequence to Sequence Network and Attention." 
+# PyTorch Documentation. https://docs.pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html.
+# This one builds on the design by adding an alternative encoder.
 class Conv2LSTM(nn.Module):
 
     def __init__(self,
