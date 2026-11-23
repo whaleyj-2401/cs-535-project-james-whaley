@@ -5,11 +5,10 @@ generate the initial hidden state for this decoder. One takes a more standard ap
 an LSTM model, using the final hidden state of this model as the initial hidden state of the decoder. The 
 second uses a convolutional-based model as the encoder. This hybrid model passes the input sequence through 
 a 1-D convolutional layer, followed by a 1-D max pooling layer. A grid search was used to tune the 
-hyperparameters.
+hyperparameters. Finally, the models are saved into .pkl files for later use and examination.
+
+In order to replicate the results, simply run the Jupyter notebook called "main_notebook.ipynb".
 
 The data used to train this model comes from Tatoeba: J. Tiedemann, 2012, Parallel Data, Tools and Interfaces in OPUS. In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)
-
-In order to replicate the results, the data must first be retrieved from: https://opus.nlpl.eu/datasets/Tatoeba?pair=en&fr
-and placed in a folder called "translation_corpus" which lies in the same directory as the Jupyter notebook.
 
 Note that as of project completion, the most recent dataset version is v2026-07-08.
