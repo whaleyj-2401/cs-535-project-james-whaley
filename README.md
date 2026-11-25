@@ -7,7 +7,8 @@ second uses a convolutional-based model as the encoder. This hybrid model passes
 a 1-D convolutional layer, followed by a 1-D max pooling layer. A grid search was used to tune the 
 hyperparameters. Finally, the models are saved into .pkl files for later use and examination.
 
-In order to replicate the results, simply run the Jupyter notebook called "main_notebook.ipynb".
+In order to replicate the results, create a Python virtual environment using the requirements.txt file,
+then simply run the Jupyter notebook.
 
 The data used to train this model comes from Tatoeba: J. Tiedemann, 2012, Parallel Data, Tools and Interfaces in OPUS. In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)
 
